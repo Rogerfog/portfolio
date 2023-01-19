@@ -26,16 +26,16 @@ body {
     border-radius:50px;
     padding: 10px 25px
 }
-
 .logo > a {
     display: flex;
     align-items: center;
     gap:10px;
 }
-
 .logo span.user, .logo span.contact{
     font-size: 30px;  
 }
+
+/*HEADER*/
 header {
     font-size: 22px;
     display:flex;
@@ -44,7 +44,6 @@ header {
     min-height: 80px;
     border-bottom: 2px solid var(--primary-color); 
 }
-
 header a{
     text-decoration: none;
     color:inherit;
@@ -58,9 +57,26 @@ header  a:hover{
     color:var(--secondary-color);
     font-size: inherit;
 }
-
 header nav ul {
     display: flex;
     column-gap: 30px;
     align-items: center;
 }
+/*MAIN*/
+.article-1 {
+    display: flex; 
+    column-gap: 20px;
+    margin: 20px auto;
+}
+
+
+.article-1 .a, .article-1 .b{
+    width: 50%; 
+    height: 200px; 
+    border-radius: 5px; 
+    background-color: var(--detail-color);
+    padding: 10px;
+}
+
+
+
