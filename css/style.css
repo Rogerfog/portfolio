@@ -88,7 +88,7 @@ main {
 
 .info {
     padding: 20px 50px 50px;
-    width: 80%;
+    width: 90%;
     margin:0 auto;
 }
 .summary .info{width: 60%;}
@@ -169,7 +169,7 @@ a.btn:hover {
 /*Projects*/
 .projects .content .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:40px 20px;
 }
 .projects .cards .project-card {
@@ -221,6 +221,20 @@ a.btn:hover {
     color: var(--secondary-color);
 }
 
+/*Skills*/
+.skills .content {
+    margin: 0 30px;
+}
+.skills .skill-list {
+    display: flex;
+    column-gap: 20px;
+    margin: 5px 0px 30px;
+}
+
+.skills .skill-list img {
+    width: auto;
+    height: 50px;
+}
 
 /*FOOTER*/
 
