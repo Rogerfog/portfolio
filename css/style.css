@@ -27,10 +27,14 @@ body {
     padding: 0 20px;
 }
 
-
+#about, #projects, #skills, #contact{
+    scroll-margin-top: var(--header-height);
+}
 
 
 .logo > a {
+    text-decoration: none;
+    color: inherit;
     display: flex;
     align-items: center;
     gap:10px;
@@ -342,7 +346,9 @@ footer .contact a.btn {
 @media  (max-width:800px){
     
     /*Burguer button*/    
-    
+    header {
+        padding: 0px;
+    }
     header nav {display:revert;}
     header .container {padding: 0;}
     header nav ul {
@@ -358,6 +364,7 @@ footer .contact a.btn {
         border-bottom: 5px solid #28293e;
     }
     header nav ul.menu a:hover{
+        color: var(--secondary-color);
         border-bottom: 5px solid #fca311;
     }
     header .logo {
@@ -419,9 +426,15 @@ footer .contact a.btn {
         top:0;
     }
 
+    #about, #projects, #skills, #contact{
+        scroll-margin-top: calc(var(--header-height) + 300px);
+    }
 
+    .info {
+        padding: 20px 0px 50px;
+    }
     .summary .info{
-        padding: calc(var(--header-height) + 100px) 50px 100px;
+        padding: calc(var(--header-height) + 100px) 0 100px;
     }
     .summary .info, .info{width: 100%;}
 
