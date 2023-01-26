@@ -89,6 +89,7 @@ main {
     color: var(--secondary-color)
 }
 
+.emfasis  {color: var(--emfasy-color);}
 .summary .info{
     padding: calc(var(--header-height) + 200px) 50px 200px;
 }
@@ -160,9 +161,18 @@ a.btn:hover {
     column-gap: 60px;
 }
 
-.about img {width: 100%; 
-    height: auto; 
+.about img {
+    width: auto; 
+    max-height: 410px; 
     border-radius:5px
+}
+.about .text a, .projects .description a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.about .text a:hover, .projects .description a:hover {
+    text-decoration: revert;
+    color: var(--emfasy-color);
 }
 
 .about .text p {
@@ -312,6 +322,11 @@ footer .contact a.btn {
         
         font-size: 20px;
     }
+    .about .content {
+        grid-template-columns: 1fr;
+    }
+    .about .content .text { order:2;}
+    .about .content figure {max-width: 50%; margin: 0 auto; margin-bottom: 30px;}
     .projects .content .cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 15px;
@@ -429,10 +444,6 @@ footer .contact a.btn {
     .skills .content {
         flex-direction: column;
     }
-    .about .content {
-        grid-template-columns: 1fr;
-    }
-    .about .content .text { order:2;}
-    .about .content figure {max-width: 50%; margin: 0 auto; margin-bottom: 30px;}
+
 
 }
