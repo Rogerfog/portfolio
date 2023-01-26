@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/70d59b99de.js" crossorigin="anonymous"></script>
     <title>Portfolio Rogerfo</title>
 </head>
 <body>
@@ -18,29 +19,29 @@
         </div>
         <nav>
             <ul>
-                <il><a href="#">Projectes /</a></il>
-                <il><a href="#">Habilitats /</a></il>
-                <il><a href="#">Sobre mi /</a></il>
-                <il><a href="#">Contacte /</a></il>
+                <il><a href="#about">Sobre mi /</a></il>
+                <il><a href="#projects">Projectes /</a></il>
+                <il><a href="#skills">Habilitats /</a></il>
+                <il><a href="#contact">Contacte /</a></il>
             </ul>
         </nav>
     </header>
     <main>
         <article class="container summary">
             <section class="info">
-                <h2 class="intro">presentació</h2>
-                <h1 class="principal-name">Títol</h1>
+                <h2 class="intro">Hola! El meu nom és</h2>
+                <h1 class="principal-name">Roger Fogueras Bayarri</h1>
                 <div class="text">
-                    <p class="">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sit ex provident, in ratione aspernatur necessitatibus eos enim maxime numquam ab doloribus. 
-                    Soluta, at! Fugiat beatae aliquam omnis, placeat quibusdam veritatis!
+                    <p class="presentation">
+                    Aquest és el meu espai personal on comparteixo els meus projectes i habilitats amb les eines que faig servir i que estic aprenent. També pots veure el meu curriculum al botó de sota, o enviar-me un correu electrònic.
+                    Si t'interessa el que faig, no dubtis en cotnactar amb mi!
                     </p>
+                    <h3>rogerfo@gmail.com</h3>
                 </div>
                 <a href="https://drive.google.com/file/d/1Vw6vIIbGM1sneo0KwPDKWe12a-9vsu0I/view?usp=share_link" alt="currículum Roger Fogueras" target="_blank" class="btn cv">Currículum</a>
             </section>
         </article>
-        <article class="container about">
+        <article class="container about" id="about">
             <section class="info">
                 <div class="secondary">
                     <h2 class="intro">Sobre mi /<h2/>
@@ -48,19 +49,13 @@
                 <div class="content">
                     <div class="text">
                         <p class="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sit ex provident, in ratione aspernatur necessitatibus eos enim maxime numquam ab doloribus. 
-                            Soluta, at! Fugiat beatae aliquam omnis, placeat quibusdam veritatis!
+                            Des que vaig acabar l'educació obligatòria sempre m'he centrat en estudis d'informàtica, on sempre m'ha agradat la part del desenvolupament web. Des de fa anys he estat en contacte amb HTML i CSS, però no és fins fa dos anys que m'he dedicat al desenvolupament web.
                         </p>
                         <p class="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sit ex provident, in ratione aspernatur necessitatibus eos enim maxime numquam ab doloribus. 
-                            Soluta, at! Fugiat beatae aliquam omnis, placeat quibusdam veritatis!
+                            Durant gairebé nou anys he treballat en una empresa puntera en el sector de dominis d'internet i servidors web, on formava part de l'equip d'atenció al client, resolent incidències i consultes dels clients a través de tiquet, xat i telèfon. També vaig tenir la sort de participar en fires a Madrid i Barcelona.
                         </p>
                         <p class="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Sit ex provident, in ratione aspernatur necessitatibus eos enim maxime numquam ab doloribus. 
-                            Soluta, at! Fugiat beatae aliquam omnis, placeat quibusdam veritatis!
+                            Fa dos anys vaig tenir l'oportunitat de començar a treballar en una empresa de disseny i desenvolupament web, creant projectes des de zero o participant en la modificació i manteniment de projectes ja existents amb WordPress i PrestaShop. Des de llavors també he tingut la sort de crear i participar en projectes per compte propi.
                         </p>
                     </div>
                     <figure>
@@ -69,7 +64,7 @@
                 </div>
             </section>
         </article>
-        <article class="container projects">
+        <article class="container projects" id="projects">
             <section class="info">
                 <div class="secondary">
                     <h2 class="intro">Projectes recents /<h2/>
@@ -84,7 +79,7 @@
                             <h4><a target="_blank" href="https://www.meritxellegea.com/">https://www.meritxellegea.com/</a></h4>
                             <div class="description">
                                 <p class="explain">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur impedit praesentium, quis molestiae laborum earum debitis vero saepe perspiciatis distinctio. Iusto porro aliquid aperiam tempore qui sunt fuga? Ipsa, vel.
+                                    Project personal per Meritxell Egea Fisioteràpia i espai Karuna a Malgrat de Mar. Un lloc web fet amb Wordpress i plantilla Ocean WP amb modificacions fetes per CSS, i diversos plugins. Les fotografies de l'espai Karuna també estan realitzades per mi.
                                 </p>
                                 <p class="tools">
                                     <span><img src="img/wordpress.png" alt="WordPress" title="WordPress"></span>
@@ -100,7 +95,7 @@
                             <h4><a target="_blank" href="https://deskandsit.com/">https://deskandsit.com/</a></h4>
                             <div class="description">
                                 <p class="explain">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur impedit praesentium, quis molestiae laborum earum debitis vero saepe perspiciatis distinctio. Iusto porro aliquid aperiam tempore qui sunt fuga? Ipsa, vel.
+                                    PrestaShop fet treballant per Seoagil. El projecte era passar d'un PrestaShop 1.6 a una nova versió 1.7. Es va realitzar la migració de productes, comandes, clients, i mòduls i es van fer modificacions de fitxers .tpl i modificacions de CSS.
                                 </p>
                                 <p class="tools">
                                     <span><img src="img/prestashop.png" alt="PrestaShop" title="PrestaShop"></span>
@@ -116,7 +111,7 @@
                             <h4><a target="_blank" href="https://flexxit.es">https://flexxit.es</a></h4>
                             <div class="description">
                                 <p class="explain">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur impedit praesentium, quis molestiae laborum earum debitis vero saepe perspiciatis distinctio. Iusto porro aliquid aperiam tempore qui sunt fuga? Ipsa, vel.
+                                    Prestashop fet treballant per Seoagil. Web creada des de zero amb Prestawshop 1.7 i plantilla Warehouse. Es van importr productes io es va modificar el CSS per adaptar al disseny al que havia proposat el client en un PDF.
                                 </p>
                                 <p class="tools">
                                     <span><img src="img/prestashop.png" alt="PrestaShop" title="PrestaShop"></span>
@@ -132,7 +127,7 @@
                             <h4><a target="_blank" href="https://gelatsitorronsxixona.com/">https://gelatsitorronsxixona.com/</a></h4>
                             <div class="description">
                                 <p class="explain">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur impedit praesentium, quis molestiae laborum earum debitis vero saepe perspiciatis distinctio. Iusto porro aliquid aperiam tempore qui sunt fuga? Ipsa, vel.
+                                    WordPress fet treballan a Seoagil. Projecte fet amb WordPress i plantilla Divi, amb WooCommer i modificacions fetes amb CSS segons propostes del client. També conté plugins per modificar tarifes d'enviament.
                                 </p>
                                 <p class="tools">
                                     <span><img src="img/wordpress.png" alt="WordPress" title="WordPress"></span>
@@ -149,7 +144,7 @@
                             <h4><a target="_blank" href="https://fotomatonlowcost.com/">https://fotomatonlowcost.com/</a></h4>
                             <div class="description">
                                 <p class="explain">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur impedit praesentium, quis molestiae laborum earum debitis vero saepe perspiciatis distinctio. Iusto porro aliquid aperiam tempore qui sunt fuga? Ipsa, vel.
+                                    WordPress modificat treballant per Seoagil. El projecte va consistir en modificar el disseny d'un WordPress ja existent. es va fer modificant el CSS de la plantilla per adaptar-la al disseny proposat per el client en en un PDF.
                                 </p>
                                 <p class="tools">
                                     <span><img src="img/wordpress.png" alt="WordPress" title="WordPress"></span>
@@ -161,35 +156,63 @@
                 </div>
             </section>
         </article>
-        <article class="container skills">
+        <article class="container skills" id="skills">
             <section class="info">
                 <div class="secondary">
                     <h2 class="intro">Habilitats /<h2/>
                 </div>
                 <div class="content">
-                    <h3>Coneixament alt</h3>
-                    <div class="skill-list">
-                        <span><img src="img/wordpress.png" alt="WordPress" title="WordPress"></span>
-                        <span><img src="img/html5.png" alt="HTML5" title="HTML5"></span>
-                        <span><img src="img/css-3.png" alt="CSS3" title="CSS3"></span>
-                        
+                    <div>
+                        <h3>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                        </h3>
+                        <div class="skill-list">
+                            <span><img src="img/wordpress.png" alt="WordPress" title="WordPress"></span>
+                            <span><img src="img/html5.png" alt="HTML5" title="HTML5"></span>
+                            <span><img src="img/css-3.png" alt="CSS3" title="CSS3"></span>
+                            
+                        </div>
                     </div>
-                    <h3>Coneixament mitjà</h3>
-                    <div class="skill-list">
-                        <span><img src="img/illustrator.png" alt="Adobe Illustrator" title="Adobe Illustrator"></span>
-                        <span><img src="img/indesign.png" alt="Adobe In Design" title="Adobe In Design"></span>
-                        <span><img src="img/prestashop.png" alt="PrestaShop" title="PrestaShop"></span>
+                    <div>
+                        <h3>
+                            <span class="material-symbols-outlined">stars</span>
+                            <span class="material-symbols-outlined">stars</span>
+                        </h3>
+                        <div class="skill-list">
+                            <span><img src="img/illustrator.png" alt="Adobe Illustrator" title="Adobe Illustrator"></span>
+                            <span><img src="img/indesign.png" alt="Adobe In Design" title="Adobe In Design"></span>
+                            <span><img src="img/prestashop.png" alt="PrestaShop" title="PrestaShop"></span>
+                        </div>
                     </div>
-                    <h3>Coneixament bàsic</h3>
-                    <div class="skill-list"> 
-                        <span><img src="img/photoshop.png" alt="Adobe Photoshop" title="Adobe Photoshop"></span>
-                        <span><img src="img/git.png" alt="Git" title="Git"></span>
-                        <span><img src="img/figma_logo.png" alt="Figma" title="Figma"></span>
-                        <span><img src="img/javascript.png" alt="Javascript" title="Javascript"></span>
+                    <div>
+                        <h3>
+                            <span class="material-symbols-outlined">stars</span>
+                        </h3>
+                        <div class="skill-list"> 
+                            <span><img src="img/photoshop.png" alt="Adobe Photoshop" title="Adobe Photoshop"></span>
+                            <span><img src="img/git.png" alt="Git" title="Git"></span>
+                            <span><img src="img/figma_logo.png" alt="Figma" title="Figma"></span>
+                            <span><img src="img/javascript.png" alt="Javascript" title="Javascript"></span>
+                        </div>
                     </div>
                 </div>
             </section>
         </article>
     </main>   
+    <footer class="">
+    <div class="container contact info" id="contact">
+        <h2>rogerfo@gmail.com</h2>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/roger-fogueras-b72a99258/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:rogerfo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <a href="https://drive.google.com/file/d/1Vw6vIIbGM1sneo0KwPDKWe12a-9vsu0I/view?usp=share_link" alt="currículum Roger Fogueras" target="_blank" class="btn cv">Currículum</a>
+    </div>
+    <div class="credits">
+        Disseny i creació per Roger Fogueras Bayarri © 2023
+    </div>
+    </footer>
 </body>
 </html>
