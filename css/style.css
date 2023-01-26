@@ -24,8 +24,10 @@ body {
     max-width: 1400px;
     width: 100%; 
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
+
+
 
 
 .logo > a {
@@ -39,42 +41,58 @@ body {
 
 /*HEADER*/
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position:fixed;  
+    top:0px;
+    width: 100%;
+    padding:15px 0px;
+    z-index:3;
     background-color: var(--main-bg-color);
-    position: fixed;
-    height: var(--header-height);
-    border-bottom: 1px solid var(--primary-color); 
-    right: 0;
-    left: 0;
-    z-index: 1;
+    border-bottom: 1px solid #fca311;
 }
-nav{
-    font-size: 22px;
-    display:flex;   
+    
+header .menu-btn {display: none;}
+header .menu-icon {display: none;}
+header nav {
+    display:flex;
     justify-content: space-between;
-}
-
-header a{
-    text-decoration: none;
-    color:inherit;
-    transition: .2s;
-}
-
-header nav a {
-    transition: .3s;
-}
-
-header  a:hover{
-    color:var(--secondary-color);
-    font-size: inherit;
-}
-
+}  
+header a.logo {padding-right: 150px;}
 header nav ul {
-    display: flex;
-    column-gap: 30px;
+    display:flex;
     align-items: center;
+    justify-content: right;
+    width: 100%;
+    padding:0px;
+    column-gap: 20px;
+    list-style-type: none;
+    margin:0;
+}
+header nav ul.menu a {
+    text-decoration:none;
+    color:var(--primary-color);
+    font-size: 22px;
+    font-weight: revert;
+    padding-bottom: 10px;;
+}
+header ul a:hover {color:var(--secondary-color)}
+
+/*L'estil de l'enllaç de la classe .contact només es veurà en vista desktop (no responsive)*/
+@media (min-width: 800px){
+  header nav ul.menu a.contact{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    letter-spacing: .5px;
+    padding: 15px 25px;
+    background-color:#c43721;
+    border:1px solid #f3d1bf;
+    border-radius: 5px;      
+    color: #fff;    
+  }  
 }
 
 /*MAIN*/
@@ -302,7 +320,10 @@ footer .contact a.btn {
 }
 
 @media  (max-width:1140px){
-    
+    header nav ul.menu a {
+        
+        font-size: 20px;
+    }
     .projects .content .cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 15px;
@@ -319,6 +340,86 @@ footer .contact a.btn {
 
 }
 @media  (max-width:800px){
+    
+    /*Burguer button*/    
+    
+    header nav {display:revert;}
+    header .container {padding: 0;}
+    header nav ul {
+        display: revert;
+        overflow: hidden;
+    }
+    header nav ul.menu a {
+        display: block;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        border-bottom: 5px solid #28293e;
+    }
+    header nav ul.menu a:hover{
+        border-bottom: 5px solid #fca311;
+    }
+    header .logo {
+        float: left;
+        display: block;
+        padding: 15px 20px;
+    }
+    header .menu {
+        max-height: 0;
+        transition: all .2s ease-out;
+    }
+
+    header .menu-icon {  
+        display: block;  
+        position: relative;
+        float: right;
+        margin: 10px;
+        padding: 25px 15px;
+        border-radius: 5px;
+        border: 1px solid var(--primary-color);
+        }
+    header .menu-icon:hover {cursor: pointer; }
+    header .menu-icon .nav-icon{
+        background: var(--primary-color);
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+    header .menu-icon .nav-icon:before{
+        background: var(--primary-color);
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top:5px;
+    }
+    header .menu-icon .nav-icon:after{
+        background: var(--primary-color);
+        content: "";
+        display:block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top:-5px;
+    }
+    header .menu-btn:checked ~ .menu {max-height: 700px;}
+    header .menu-btn:checked ~ .menu-icon .nav-icon{background-color: transparent;}
+    header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+        transform: rotate(-45deg);
+        top:0
+    }
+    header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+        transform: rotate(45deg);
+        top:0;
+    }
+
+
     .summary .info{
         padding: calc(var(--header-height) + 100px) 50px 100px;
     }
