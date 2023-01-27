@@ -84,11 +84,16 @@ header nav ul.menu a:hover{
 
 .lang{
     display: flex;
-    align-items: center;
+    align-items: center ;
+    justify-content: space-between;
+}
+.lang span {
+   padding-top: 5px;
 }
 .check {
     position: relative;
-    width: 50px;
+    width: 40px;
+    margin: 0 5px;
 }
 
 .check:hover{
@@ -98,8 +103,8 @@ header nav ul.menu a:hover{
 .check::before{
     content: "";
     position: absolute;
-    width: 50px;
-    height: 25px;
+    width: 40px;
+    height: 20px;
     background-color: #254252;
     border-radius: 25px;
 }
@@ -107,8 +112,8 @@ header nav ul.menu a:hover{
 .check::after {
     content: "";
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background-color: #fca311;
     border-radius: 50%;
     transition: 0.25s;
@@ -117,7 +122,7 @@ header nav ul.menu a:hover{
 }
 
 .check:checked:after{
-    left: 25px;
+    left: 20px;
     border: 2px solid #254252;
 }
 .check:checked::before{
@@ -491,5 +496,9 @@ footer .contact a.btn {
         flex-direction: column;
     }
 
+    .lang{justify-content: center;padding: 15px 0 20px;}
+    .lang-switch {
+        order: 0;
+    }
 
 }
