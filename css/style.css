@@ -27,9 +27,8 @@ body {
     padding: 0 20px;
 }
 
-#about, #projects, #skills, #contact{
-    scroll-margin-top: var(--header-height);
-}
+#about, #projects, #skills{padding-bottom: 50px;}
+#about, #projects, #skills, #contact{scroll-margin-top: var(--header-height);}
 
 .logo > a {
     text-decoration: none;
@@ -38,9 +37,7 @@ body {
     align-items: center;
     gap:10px;
 }
-.logo span.user, .logo span.contact{
-    font-size: 30px;  
-}
+.logo span.user, .logo span.contact{font-size: 30px;}
 
 /*HEADER*/
 header {
@@ -77,28 +74,23 @@ header nav ul.menu a {
     font-weight: revert;
     padding-bottom: 10px;;
 }
-header ul a:hover {color:var(--secondary-color)}
+header ul a:hover {color:var(--emfasy-color)}
 
-header nav ul.menu a:hover{
-    color: var(--secondary-color);}
+header nav ul.menu a:hover{color: var(--emfasy-color);}
 
 .lang{
     display: flex;
     align-items: center ;
     justify-content: space-between;
 }
-.lang span {
-   padding-top: 5px;
-}
+.lang span {padding-top: 5px;}
 .check {
     position: relative;
     width: 40px;
     margin: 0 5px;
 }
 
-.check:hover{
-    cursor: pointer;
-}
+.check:hover{cursor: pointer;}
 
 .check::before{
     content: "";
@@ -125,11 +117,7 @@ header nav ul.menu a:hover{
     left: 20px;
     border: 2px solid #254252;
 }
-.check:checked::before{
-    background-color: #254252;
-    
-
-}
+.check:checked::before{background-color: #254252;}
 
 /*MAIN*/
 main {
@@ -138,12 +126,8 @@ main {
 }
 
 .emfasis  {color: var(--emfasy-color);}
-.summary .info{
-    padding: calc(var(--header-height) + 200px) 50px 200px;
-}
-.summary .text {
-    margin-bottom: 30px;
-}
+.summary .info{padding: calc(var(--header-height) + 200px) 50px 200px;}
+.summary .text {margin-bottom: 30px;}
 
 .info {
     padding: 20px 50px 50px;
@@ -209,19 +193,17 @@ a.btn:hover {
     column-gap: 60px;
 }
 
-.invert {
-    filter: invert(100%);
-}
+.invert {filter: invert(100%);}
 .about img {
     width: auto; 
     max-height: 410px; 
     border-radius:5px
 }
-.about .text a, .projects .description a {
+.about .text a, .projects a {
     text-decoration: none;
     color: var(--primary-color);
 }
-.about .text a:hover, .projects .description a:hover {
+.about .text a:hover, .projects a:hover {
     text-decoration: revert;
     color: var(--emfasy-color);
 }
@@ -255,9 +237,7 @@ a.btn:hover {
     margin: 0;
     font-size: 1.7rem;
 }
-.projects .cards figure {
-    margin: 10px 0;
-}
+.projects .cards figure {margin: 10px 0;}
 
 .projects .cards img {
     width: 100%;
@@ -265,9 +245,7 @@ a.btn:hover {
     border-radius: 5px;
 }
 
-.projects figure img{
-    transition: all .4s;
-}
+.projects figure img{transition: all .4s;}
 
 .projects figure img:hover{
     transition: all .4s;
@@ -289,17 +267,8 @@ a.btn:hover {
     width: 30px;
     height: auto;
 }
- .projects p {
-    margin:10px 0;
- }
-.project-card h4 a {
-    text-decoration: none;
-    color: var(--primary-color)
-}
+ .projects p {margin:10px 0;}
 
-.project-card h4 a:hover {
-    color: var(--secondary-color);
-}
 
 /*Skills*/
 .skills .content {
@@ -308,9 +277,7 @@ a.btn:hover {
     justify-content: space-between;
 }
 
-.skills img {
-    transition: all .4s;
-}
+.skills img {transition: all .4s;}
 .skills img:hover{
     transition: all .4s;
     transform: rotate(5deg);
@@ -336,9 +303,7 @@ footer .contact {
     align-items: center;
     border-top: 2px solid #fca311;
 }
-footer .contact p {
-    color: var(--secondary-color);
-}
+footer .contact p {color: var(--secondary-color);}
 
 footer .social {
     display: flex;
@@ -351,9 +316,7 @@ footer .social a {
     font-size: 1.5rem;
 }
 
-footer .social a:hover {
-    color:var(--secondary-color)
-}
+footer .social a:hover {color:var(--emfasy-color);}
 
 footer .credits{
     width: 100%;
@@ -369,15 +332,10 @@ footer .contact a.btn {
 }
 
 @media  (max-width:1140px){
-    header nav ul.menu a {
-        
-        font-size: 20px;
-    }
-    .about .content {
-        grid-template-columns: 1fr;
-    }
+    header nav ul.menu a {font-size: 20px;}
+    .about .content {grid-template-columns: 1fr;}
     .about .content .text { order:2;}
-    .about .content figure {max-width: 50%; margin: 0 auto; margin-bottom: 30px;}
+    .about .content figure {max-width: revert; margin: 0 auto; margin-bottom: 30px;}
     .projects .content .cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 15px;
@@ -386,9 +344,7 @@ footer .contact a.btn {
         width: auto;
         height: 40px;
     }
-    .skills .skill-list {
-        column-gap: 5px;
-    }
+    .skills .skill-list {column-gap: 5px;}
     .summary .info, .contact.info{width: 80%;}
 
 
@@ -396,9 +352,7 @@ footer .contact a.btn {
 @media  (max-width:800px){
     
     /*Burguer button*/    
-    header {
-        padding: 0px;
-    }
+    header {padding: 0px;}
     header nav {display:revert;}
     header .container {padding: 0;}
     header nav ul {
@@ -414,7 +368,7 @@ footer .contact a.btn {
         border-bottom: 5px solid #28293e;
     }
     header nav ul.menu a:hover{
-        color: var(--secondary-color);
+        color: var(--primary-color);
         border-bottom: 5px solid #fca311;
     }
     header .logo {
@@ -476,15 +430,11 @@ footer .contact a.btn {
         top:0;
     }
 
-    #about, #projects, #skills, #contact{
-        scroll-margin-top: calc(var(--header-height) + 300px);
-    }
+    #about, #projects, #skills, #contact{scroll-margin-top: calc(var(--header-height) + 360px);}
 
-    .info {
-        padding: 20px 0px 50px;
-    }
+    .info {padding: 20px 0px 50px;}
     .summary .info{
-        padding: calc(var(--header-height) + 100px) 0 100px;
+        padding: calc(var(--header-height) + 0px) 0 100px;
     }
     .summary .info, .info{width: 100%;}
 
@@ -492,13 +442,6 @@ footer .contact a.btn {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    .skills .content {
-        flex-direction: column;
-    }
-
+    .skills .content {flex-direction: column;}
     .lang{justify-content: center;padding: 15px 0 20px;}
-    .lang-switch {
-        order: 0;
-    }
-
 }
