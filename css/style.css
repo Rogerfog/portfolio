@@ -31,7 +31,6 @@ body {
     scroll-margin-top: var(--header-height);
 }
 
-
 .logo > a {
     text-decoration: none;
     color: inherit;
@@ -82,6 +81,50 @@ header ul a:hover {color:var(--secondary-color)}
 
 header nav ul.menu a:hover{
     color: var(--secondary-color);}
+
+.lang{
+    display: flex;
+    align-items: center;
+}
+.check {
+    position: relative;
+    width: 50px;
+}
+
+.check:hover{
+    cursor: pointer;
+}
+
+.check::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #254252;
+    border-radius: 25px;
+}
+
+.check::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fca311;
+    border-radius: 50%;
+    transition: 0.25s;
+    border: 2px solid #254252;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #254252;
+}
+.check:checked::before{
+    background-color: #254252;
+    
+
+}
 
 /*MAIN*/
 main {
