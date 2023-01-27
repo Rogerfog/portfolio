@@ -57,6 +57,7 @@ header nav {
     justify-content: space-between;
 }  
 header a.logo {padding-right: 150px;}
+header .logo img {width: 130px;}
 header nav ul {
     display:flex;
     align-items: center;
